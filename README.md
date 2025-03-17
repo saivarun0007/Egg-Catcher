@@ -1,19 +1,22 @@
-# Match Maker Game
+# Egg Catcher Game
 
 ## Description
 
-This project is a *Match Maker Memory Game* built using *Python* and *Tkinter*. Players flip tiles to find matching pairs of symbols, testing memory and concentration.
-
+This project is an *Egg Catcher Game* built using *Python* and *Tkinter* for the graphical user interface (GUI). The player controls a U-shaped pan to catch falling eggs, earn points, and progress through levels.
 
 ## Features
 
 - *User-friendly GUI* using Tkinter.
 
-- Click tiles to reveal hidden symbols.
+- *U-shaped pan* to catch falling eggs.
 
-- Match pairs of symbols to disable the tiles.
+- *Multiple levels* with increasing difficulty.
 
-- Randomly shuffled symbols for replayability.
+- *Score tracking* and chances system.
+
+- *Game over and level progression messages.*
+
+- *Different background images* for each level.
 
 
 ## Technologies Used
@@ -22,9 +25,9 @@ This project is a *Match Maker Memory Game* built using *Python* and *Tkinter*. 
 
 - *Tkinter* for GUI
 
-- *Random* for shuffling symbols
+- *Pillow (PIL)* for handling images
 
-- *Time* for delaying unmatched tile resets
+- *Random* for generating random egg positions
 
 
 ## Installation
@@ -33,37 +36,50 @@ This project is a *Match Maker Memory Game* built using *Python* and *Tkinter*. 
 
 - Install Python 
 
+- Install required dependencies:
+  sh
+  pip install pillow
+  
 
 ## Setup
 
-1. *Run the Python Script:*
+1. *Ensure You Have Background Images:*
+   - The game requires three background images: background1.jpg, background2.jpg, background3.jpg.
+
+   - Place these images in the same directory as the script.
+
+
+2. *Run the Python Script:*
    sh
-   python match_maker.py
+   python egg_catcher.py
    
 
 ## Gameplay
 
-- Click on any tile to reveal its symbol.
+- Move the *U-shaped pan* using the *Left Arrow* and *Right Arrow* keys.
 
-- Click another tile to try and find a match.
+- Catch the falling eggs to earn *10 points per egg*.
 
-- If the symbols match, both tiles remain revealed and become disabled.
+- Lose a chance when an egg falls off the screen.
 
-- If they don't match, they will reset after a brief delay.
+- Progress to the *next level* at *100, 150, and 200 points*.
 
-- Continue until all tiles are matched.
+- Game over when chances reach *zero*.
 
 
 ## Troubleshooting
 
-- Ensure that Python is installed.
+- Ensure the background images (background1.jpg, background2.jpg, background3.jpg) are present in the correct directory.
 
-- If the game does not launch, check for any syntax errors in the script.
+- If images do not load, check the file paths in the script.
+
+- If PIL (Pillow) is not installed, install it using pip install pillow.
 
 
 ## Author
 
-Developed by **CHANDRUPATLA SAI VARUN**
+Developed by *CHANDRUPATLA SAI VARUN*
+
 
 ## License
 
